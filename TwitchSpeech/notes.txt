@@ -1,0 +1,9 @@
+﻿
+reading from streamlink / ffmpeg
+
+streamlink twitch.tv/trihex audio_only --player-external-http
+ffmpeg -i http://127.0.0.1:52918/ -c:v none -c:a libmp3lame -b:a 320k -joint_stereo 0 -y -format mp3 aa.mp3
+
+
+
+
